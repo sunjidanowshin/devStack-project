@@ -4,8 +4,8 @@ const Banner = () => {
     return (
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 p-4 m-2">
         <div className="flex flex-col gap-5 items-center justify-center p-4 m-2">
-            <div><h1 className ="text-4xl font-bold">Build Your Ideal</h1> <br/>
-            <h1 className = "text-4xl font-bold bg-gradient-to-r from-red-500 to-indigo-600 bg-clip-text text-transparent " > Development Stack</h1> 
+            <div><h1 className ="text-4xl font-bold">Build Your Ideal <br/>
+            <span className = "text-4xl font-bold bg-gradient-to-r from-red-500 to-indigo-600 bg-clip-text text-transparent " > Development Stack </span></h1> 
             <h3 className ="text-gray-600 my-5 ">Explore frontend, backend, database and tooling options, <br/> 
             compare them side by side, ans put together the stack that fits your <br/>next project.</h3></div>
  

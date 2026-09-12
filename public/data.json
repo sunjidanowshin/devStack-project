@@ -1,0 +1,86 @@
+[
+  {
+    "name": "React",
+    "type": "Frontend",
+    "difficulty": "Beginner-Friendly",
+    "rating": 4.9,
+    "tag": "Popular"
+  },
+  {
+    "name": "Vue.js",
+    "type": "Frontend",
+    "difficulty": "Beginner-Friendly",
+    "rating": 4.8,
+    "tag": "Versatile"
+  },
+  {
+    "name": "Svelte",
+    "type": "Frontend",
+    "difficulty": "Intermediate",
+    "rating": 4.8,
+    "tag": "Fast"
+  },
+  {
+    "name": "Next.js",
+    "type": "Frontend",
+    "difficulty": "Intermediate",
+    "rating": 4.8,
+    "tag": "Trending"
+  },
+  {
+    "name": "Node.js",
+    "type": "Backend",
+    "difficulty": "Intermediate",
+    "rating": 4.8,
+    "tag": "Standard"
+  },
+  {
+    "name": "PostgreSQL",
+    "type": "Database",
+    "difficulty": "Intermediate",
+    "rating": 4.9,
+    "tag": "Top SQL"
+  },
+  {
+    "name": "Redis",
+    "type": "Database",
+    "difficulty": "Intermediate",
+    "rating": 4.9,
+    "tag": "Cache"
+  },
+  {
+    "name": "JavaScript",
+    "type": "Language",
+    "difficulty": "Beginner-Friendly",
+    "rating": 4.9,
+    "tag": "Ubiquitous"
+  },
+  {
+    "name": "TypeScript",
+    "type": "Language",
+    "difficulty": "Intermediate",
+    "rating": 4.9,
+    "tag": "Essential"
+  },
+  {
+    "name": "Java",
+    "type": "Language",
+    "difficulty": "Intermediate",
+    "rating": 4.6,
+    "tag": "Robust"
+  },
+  {
+    "name": "Tailwind CSS",
+    "type": "Styling",
+    "difficulty": "Beginner-Friendly",
+    "rating": 4.9,
+    "tag": "Modern"
+  },
+  {
+    "name": "Docker",
+    "type": "DevOps",
+    "difficulty": "Intermediate",
+    "rating": 4.8,
+    "tag": "Containers"
+  }
+]

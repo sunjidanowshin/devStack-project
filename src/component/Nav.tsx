@@ -2,8 +2,8 @@ import Logo from "../assets/logo-text.png";
 
 const Nav = () => {
     return (
-        <div>
-           <nav className="flex justify-between p-4 container mx-auto outline outline-1 outline-gray-300 sticky top-0 z-50">  
+        <div className="container mx-auto bg-white-500">
+           <nav className="flex justify-between p-4 container mx-auto outline outline-1 outline-gray-300 sticky top-0 z-50 ">  
   <img src={Logo} alt="Logo" className="h-10" />
   <ul className="flex space-x-4">
     <li><a href="#" className="text-gray-700 hover:text-pink-600">Home</a></li>

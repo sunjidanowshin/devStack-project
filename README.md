@@ -1,10 +1,9 @@
-Name of your project
-A little description
-Technology that you use
-3 features about your project
+
 
 Project Name : DevStack Builder.
+
 Description: An interactive app to explore web technologies and build your own personalized tech stack by adding tools to a stack panel.
+
 Technologies Used: React.js, TypeScript, Vite, Tailwind CSS & DaisyUI, React-Toastify, JSON (local data).
 Features :
 1. Browse & Add Technologies — Responsive card grid with icon, rating, difficulty; add to stack with one click.

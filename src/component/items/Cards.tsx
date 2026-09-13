@@ -1,9 +1,16 @@
-import React from 'react';
-import { useState } from 'react';
+
+import React, { type Dispatch, type SetStateAction, useState } from 'react';
 import type { Iitem } from '../../types/itemtype';
 
 
-const Cards = ({ item }: { item: Iitem }) => {
+interface IAddedItemCardProps{
+    item : Iitem;
+    addedItems : Iitem[];
+    setAddedItems : Dispatch<SetStateAction<Iitem[]>>;
+}
+
+
+const Cards = ({ item, addedItems, setAddedItems }: IAddedItemCardProps ) => {
 
 const [isAdded, setIsAdded] = useState(false);
 
@@ -25,7 +32,7 @@ const [isAdded, setIsAdded] = useState(false);
     </span>
   </div>
 
-  {/* Body */}
+
   <div className="card-body p-0 gap-2">
     <h2 className="card-title text-lg font-semibold text-gray-900">
       {item.name}
@@ -34,7 +41,7 @@ const [isAdded, setIsAdded] = useState(false);
       {item.description}
     </p>
 
-    {/* Meta row: category, level, rating */}
+
     <div className="flex items-center gap-2 mt-1">
       <span className="text-xs px-2 py-1 rounded-md bg-gray-100 text-gray-600">
         {item.type}
@@ -47,12 +54,15 @@ const [isAdded, setIsAdded] = useState(false);
       </span>
     </div>
 
-    {/* Button */}
+
     <div className="card-actions mt-3">
       <button 
         className={`btn w-full h-[45px] bg-black text-white rounded-xl transition-all duration-300 hover:bg-gradient-to-r hover:from-red-500 hover:to-purple-500 hover:text-amber-50
             disabled:bg-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed disabled:hover:bg-none disabled:hover:from-transparent disabled:hover:to-transparent`}
-        onClick={() => setIsAdded(!isAdded)}
+        onClick={() => {
+              setAddedItems([...addedItems, item]);
+              setIsAdded(true);
+            }}
         disabled= {isAdded}
       >
         

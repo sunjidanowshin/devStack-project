@@ -1,17 +1,29 @@
-import React from 'react';
+import React, { type Dispatch, type SetStateAction } from 'react';
 import Cards from './Cards';
 import type { Iitem } from '../../types/itemtype';
 
-const Available = ({ items }: { items: Iitem[] }) => {
+interface IAvailableProps {
+    items: Iitem[];
+    addedItems : Iitem[]
+    setAddedItems : Dispatch<SetStateAction<Iitem[]>>;
+}
+
+
+const Available = ({ items, addedItems, setAddedItems }: IAvailableProps) => {
     console.log(items);
     return (
-        <div>
+    
+
              <div className= "grid grid-cols-3 gap-3 p-2 m-2 items-center">
             {items.map((item : Iitem, ind:number) => {
-                return <Cards key ={ind} item={item} />   
+                return (<Cards key ={ind}
+                 item={item} 
+                 addedItems = {addedItems}
+                setAddedItems ={setAddedItems} />  
+            ); 
             })}
         </div>
-        </div>
+    
     );
 };
 

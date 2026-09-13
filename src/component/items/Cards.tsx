@@ -27,9 +27,9 @@ for (let i = 0; i < addedItems.length; i++) {
 
 
     return (
-       <div className="card flex flex-col p-5 gap-3 rounded-2xl border border-gray-200 shadow-sm bg-white w-[260px] transition-all duration-300 hover:outline hover:outline-1 hover:outline-pink-600 hover:-translate-y-1">
+       <div className="card flex flex-col p-5 gap-3 rounded-2xl border border-gray-200 shadow-sm bg-white w-full transition-all duration-300 hover:outline hover:outline-1 hover:outline-pink-600 hover:-translate-y-1">
         {showToast && (
-  <div className="fixed top-5 right-5 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg text-sm z-50">
+  <div className="fixed top-5 left-1/2 -translate-x-1/2 sm:left-auto sm:right-5 sm:translate-x-0 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg text-sm z-50 max-w-[90%] sm:max-w-xs text-center">
      {item.name} added to stack!
   </div>
 )}

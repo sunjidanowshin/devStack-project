@@ -17,7 +17,7 @@ const YourStack = ({ addedItems, setAddedItems }: IYourStackProps) => {
   };
 
   return (
-     <div className="w-[280px] bg-white rounded-2xl border border-gray-200 shadow-sm p-5">
+     <div className="w-full lg:w-[280px] bg-white rounded-2xl border border-gray-200 shadow-sm p-5">
 <h2 className="text-xl font-bold text-gray-900">Your Stack</h2>
  <p className="text-sm text-gray-400 mb-4">
         {addedItems.length} Technology Selected

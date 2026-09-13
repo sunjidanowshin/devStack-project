@@ -2,9 +2,9 @@
 import Logo from "../assets/logo-text.png"
 const LastPart = () => {
     return (
-        <div className="flex flex-col">
-           <div className="flex flex-col md:flex-row justify-between gap-8 p-5 m-5 md:m-10">
-                <div className ="flex flex-col gap-2">   <img src={Logo} alt="Logo" className="h-10 w-auto" />
+        <div className="flex flex-col gap-2 ">
+           <div className="flex flex-col md:flex-row justify-between items-center gap-8 p-5 m-5 md:m-10">
+                <div className ="flex flex-col gap-2">   <img src={Logo} alt="Logo" className="h-8 w-auto object-contain" />
                   <p>Curated toools, technologies, and resources for developers building <br/> modern software</p>
 
                     <ul className="flex flex-row space-x-4">
@@ -38,10 +38,7 @@ const LastPart = () => {
      </div>           
            </div>
 
-
-
-
-           <div className="flex flex-col md:flex-row justify-between items-center gap-2 border-t border-gray-300 p-6 md:p-10 text-gray-600 text-center"> <p> 2026 Dev Stack. All rights reserved.</p> <p><span>Privacy </span>Terms</p></div>
+           <div className="flex flex-col md:flex-row justify-between items-center gap-2 border-t border-gray-300 p-6 md:p-10 text-gray-600 text-center"> <p> 2026 Dev Stack. All rights reserved.</p> <p><span className = "mr-4">Privacy Policy</span>Terms of Services</p></div>
         </div>
     );
 };

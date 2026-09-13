@@ -1,5 +1,5 @@
 
-import React, { type Dispatch, type SetStateAction, useState } from 'react';
+import React, { type Dispatch, type SetStateAction, useState} from 'react';
 import type { Iitem } from '../../types/itemtype';
 
 
@@ -10,13 +10,29 @@ interface IAddedItemCardProps{
 }
 
 
-const Cards = ({ item, addedItems, setAddedItems }: IAddedItemCardProps ) => {
 
-const [isAdded, setIsAdded] = useState(false);
+
+
+
+
+const Cards = ({ item, addedItems, setAddedItems }: IAddedItemCardProps ) => {
+const [showToast, setShowToast] = useState(false);
+let isAdded = false;
+
+for (let i = 0; i < addedItems.length; i++) {
+  if (addedItems[i].name === item.name) {
+    isAdded = true;
+  }
+}
 
 
     return (
        <div className="card flex flex-col p-5 gap-3 rounded-2xl border border-gray-200 shadow-sm bg-white w-[260px] transition-all duration-300 hover:outline hover:outline-1 hover:outline-pink-600 hover:-translate-y-1">
+        {showToast && (
+  <div className="fixed top-5 right-5 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg text-sm z-50">
+    ✅ {item.name} added to stack!
+  </div>
+)}
 
   {/* Top row: icon + badge */}
   <div className="flex flex-row items-center justify-between">
@@ -59,9 +75,10 @@ const [isAdded, setIsAdded] = useState(false);
       <button 
         className={`btn w-full h-[45px] bg-black text-white rounded-xl transition-all duration-300 hover:bg-gradient-to-r hover:from-red-500 hover:to-purple-500 hover:text-amber-50
             disabled:bg-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed disabled:hover:bg-none disabled:hover:from-transparent disabled:hover:to-transparent`}
-        onClick={() => {
-              setAddedItems([...addedItems, item]);
-              setIsAdded(true);
+        onClick={() =>
+             {setAddedItems([...addedItems, item]);
+            setShowToast(true);
+            setTimeout(() => setShowToast(false), 2000);
             }}
         disabled= {isAdded}
       >

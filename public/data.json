@@ -1,6 +1,6 @@
 [
   {
-    "image": "../src/assets/React-icon.svg.webp",
+    "image": "/Images/React-icon.svg.webp",
     "name": "React",
     "type": "Frontend",
     "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
@@ -9,7 +9,7 @@
     "tag": "Popular"
   },
   {
-    "image": "../src/assets/Vue.js_Logo_2.svg.webp",
+    "image": "/Images/Vue.js_Logo_2.svg.webp",
     "name": "Vue.js",
     "type": "Frontend",
     "description": "An approachable, performant, and versatile framework for building web user interfaces.",
@@ -18,7 +18,7 @@
     "tag": "Versatile"
   },
   {
-    "image": "../src/assets/Svelte_Logo.svg.webp",
+    "image": "/Images/Svelte_Logo.svg.webp",
     "name": "Svelte",
     "type": "Frontend",
     "description": "Cybernetically enhanced web apps with compile-time reactivity and zero virtual DOM overhead.",
@@ -27,7 +27,7 @@
     "tag": "Fast"
   },
   {
-    "image": "../src/assets/Nextjs.png",
+    "image": "/Images/Nextjs.png",
     "name": "Next.js",
     "type": "Frontend",
     "description": "The React framework for full-stack web applications with hybrid static & server rendering.",
@@ -36,7 +36,7 @@
     "tag": " "
   },
   {
-    "image": "../src/assets/download.png",
+    "image": "/Images/download.png",
     "name": "Node.js",
     "type": "Backend",
     "description": "An asynchronous event-driven JavaScript runtime built on Chrome's V8 engine.",
@@ -45,7 +45,7 @@
     "tag": "Standard"
   },
   {
-    "image": "../src/assets/postgreSql.png",
+    "image": "/Images/postgreSql.png",
     "name": "PostgreSQL",
     "type": "Database",
     "description": "A powerful, open-source object-relational database system with proven reliability.",
@@ -54,7 +54,7 @@
     "tag": "Top SQL"
   },
   {
-    "image": "../src/assets/redis.png",
+    "image": "/Images/redis.png",
     "name": "Redis",
     "type": "Database",
     "description": "In-memory data structure store used as a high-speed database, cache, and message broker.",
@@ -63,7 +63,7 @@
     "tag": "Cache"
   },
   {
-    "image": "../src/assets/js.png",
+    "image": "/Images/js.png",
     "name": "JavaScript",
     "type": "Language",
     "description": "The versatile, ubiquitous scripting language powering dynamic behavior across the web.",
@@ -72,7 +72,7 @@
     "tag": "Ubiquitous"
   },
   {
-    "image": "../src/assets/TS.png",
+    "image": "/Images/TS.png",
     "name": "TypeScript",
     "type": "Language",
     "description": "A strongly typed programming language that builds on JavaScript for robust tooling.",
@@ -81,7 +81,7 @@
     "tag": "Essential"
   },
   {
-    "image": "../src/assets/java.png",
+    "image": "/Images/java.png",
     "name": "Java",
     "type": "Language",
     "description": "A secure, object-oriented programming language designed for portability and scale.",
@@ -90,7 +90,7 @@
     "tag": "Robust"
   },
   {
-    "image": "../src/assets/Taliwind.png",
+    "image": "/Images/Taliwind.png",
     "name": "Tailwind CSS",
     "type": "Styling",
     "description": "A utility-first CSS framework packed with classes that can be composed to build custom UI.",
@@ -99,7 +99,7 @@
     "tag": "Modern"
   },
   {
-    "image": "../src/assets/Docker.png",
+    "image": "/Images/Docker.png",
     "name": "Docker",
     "type": "DevOps",
     "description": "A platform designed to build, share, and run containerized applications reliably.",

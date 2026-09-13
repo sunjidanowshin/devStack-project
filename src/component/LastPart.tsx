@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Logo from "../assets/logo-text.png"
 const LastPart = () => {
     return (
@@ -40,7 +40,7 @@ const LastPart = () => {
 
 
 
-            <div className ="flex flew-row justify-between p-10 m-10 text-gray-600 "> <p> 2026 Dev Stack. All rights reserved.</p> <p><span>Privacy </span>Terms</p></div>
+            <div className ="flex flew-row justify-between border-t border-gray-300 p-10 m-10 text-gray-600 "> <p> 2026 Dev Stack. All rights reserved.</p> <p><span>Privacy </span>Terms</p></div>
         </div>
     );
 };

@@ -23,7 +23,7 @@ const [addedItems, setAddedItems] = useState<Iitem[]>([])
         <div><Available items ={items} addedItems={addedItems} setAddedItems = {setAddedItems}/> </div>
 </div>
        
-      <div><YourStack addedItems = {addedItems}/> </div>  
+      <div><YourStack addedItems = {addedItems} setAddedItems = { setAddedItems}/> </div>  
         </div>)
     ;
 };

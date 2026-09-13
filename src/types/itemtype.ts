@@ -1,7 +1,8 @@
 export interface Iitem {
-
-    "name": string
-    "type": string
+    "image": string,
+    "name": string,
+    "type": string,
+    "description": string,
     "difficulty": string,
     "rating": number,
     "tag": string

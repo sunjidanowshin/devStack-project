@@ -1,4 +1,4 @@
-import React, {use} from 'react';
+import React, {use } from 'react';
 import type { Iitem } from '../../types/itemtype';
 import Available from './Available';
 interface ItemsProps {
@@ -9,6 +9,9 @@ interface ItemsProps {
 const Items = ({itemsPromise}:ItemsProps) => {
     const items = use(itemsPromise)
     console.log(items)
+
+{/*const[buttonType, setButtonType] = useState("available")*/}
+
     return(
         <div className="flex flex-row gap-5 items-center justify-center p-4 m-2 container mx-auto">
             <div>

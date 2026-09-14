@@ -5,7 +5,7 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
     return (
         <>
-           <nav className= "flex justify-between items-center p-4 container mx-auto outline outline-1 outline-gray-300 sticky top-0 z-50 bg-white">  
+           <nav className= "flex justify-between items-center p-4 md:px-30 mx-auto border border-1 border-gray-300 sticky top-0 z-50 bg-white">  
   <img src={Logo} alt="Logo" className="h-10" />
   <ul className="hidden md:flex space-x-4">
     <li><a href="#" className="text-gray-700 hover:text-pink-600">Home</a></li>

@@ -2,7 +2,7 @@
 import BannerStack from "../assets/banner-stack.png";
 const Banner = () => {
     return (
-        <div className="flex flex-col md:flex-row items-center justify-center gap-10 p-4 m-2">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10 p-4 md:px-10 m-2">
         <div className="flex flex-col gap-5 items-center justify-center p-4 m-2">
             <div><h1 className ="text-3xl md:text-4xl font-bold">Build Your Ideal <br/>
             <span className = "text-3xl md:text-4xl font-bold bg-gradient-to-r from-red-500 to-indigo-600 bg-clip-text text-transparent " > Development Stack </span></h1> 

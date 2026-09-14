@@ -14,7 +14,7 @@ const Items = ({itemsPromise}:ItemsProps) => {
 {/*const[buttonType, setButtonType] = useState("available")*/}
 const [addedItems, setAddedItems] = useState<Iitem[]>([])
     return(
-       <div className="flex flex-col lg:flex-row gap-5 items-center lg:items-start justify-center p-4 m-2 container mx-auto">
+       <div className="flex flex-col lg:flex-row gap-5 items-center lg:items-start justify-center p-4 md:px-10 m-2 mx-auto">
             <div className="w-full">
 
       <div><h1 className= "text-2xl md:text-3xl w-full font-bold">Explore the <span  className = "font-bold bg-gradient-to-r from-red-500 to-indigo-600 bg-clip-text text-transparent  ">Technologies</span> </h1>
@@ -23,7 +23,7 @@ const [addedItems, setAddedItems] = useState<Iitem[]>([])
         <div><Available items ={items} addedItems={addedItems} setAddedItems = {setAddedItems}/> </div>
 </div>
        
-      <div className="w-full lg:w-auto"><YourStack addedItems = {addedItems} setAddedItems = { setAddedItems}/> </div>  
+      <div className="w-full lg:w-auto lg:mt-[80px]"><YourStack addedItems = {addedItems} setAddedItems = { setAddedItems}/> </div>  
         </div>)
     ;
 };

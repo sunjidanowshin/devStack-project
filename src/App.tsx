@@ -14,7 +14,7 @@ return data;
 function App() {
 const itemsPromise = itemsFetch();
   return (
-    <>
+    <div className = "max-w-[1440px] mx-auto">
    
     <Nav/>
     <Banner/>
@@ -22,7 +22,7 @@ const itemsPromise = itemsFetch();
       <Items itemsPromise={itemsPromise} />
     </Suspense>
   <LastPart/>
-    </>
+    </div>
   )
 }
 
